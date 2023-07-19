@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap');
+
+:root{
+    --mainColor: #2A7AE4;
+    --mainColorSoft: #EAF2FD;
+    --secondaryColor: #464646;
+    --grisClaro: #F5F5F5;
+    --grisOscuro: #A2A2A2;
+    --colorFondo: #ffffff;
+}
+
+.bg-container{
+    background-color: var(--colorFondo);
+}
+
+
+.detalleProducto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detalleProductoBox{
+    width: 70rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.detalleProductoBox .imgProducto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detalleProductoBox .imgProducto img{
+    width: 25rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.detalleProductoBox .descProducto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.descProducto .nombreProducto,
+.descProducto .precioProducto{
+    width: 100%;
+    text-align: start;
+}
+
+.descProducto .nombreProducto{
+    font-size: 2rem;
+}
+
+.descProducto .precioProducto{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.productosSimilares{
+    margin: 1rem 5% ;
+}

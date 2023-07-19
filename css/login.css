@@ -1,0 +1,53 @@
+:root{
+    --mainColor: #2A7AE4;
+    --mainColorSoft: #EAF2FD;
+    --secondaryColor: #464646;
+    --grisClaro: #F5F5F5;
+    --grisOscuro: #A2A2A2;
+    --colorFondo: #ffffff;
+}
+.container{
+    background: var(--grisClaro);
+}
+.login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 5%;
+}
+
+.login h3{
+    font-size: 1.5rem;
+}
+
+.login form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.login form input{
+    width: 26rem;
+    height: 3rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--grisOscuro);
+}
+
+.login form button{
+    width: 26rem;
+    height: 3rem;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    background: var(--mainColor);
+    color: var(--colorFondo);
+    cursor: pointer;
+}

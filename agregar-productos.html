@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/agregar-producto.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="img/control logo.png" alt="">
+                <img src="img/AluraGeek logo.png" alt="">
+            </div>
+            <div class="buscador">
+                <form action="#">
+                    <input type="text" name="" id="" placeholder="¿Que deseas buscar?">
+                    <button type="submit"><i class='bx bx-search-alt-2'></i></button>
+                </form>
+            </div>
+            <div class="btnLogin">
+                <a href="login.html">Menú Admin</a>
+            </div>
+        </header>
+
+        <div class="productoNuevo">
+            <h3>Agregar Producto Nuevo</h3>
+            <form action="#">
+                <div class="imgPreview">
+                    <img src="img/image_icon-icons.com_50366.png" alt="" id="img">
+                    <input type="file" name="foto" id="foto" accept="image/*">
+                    <label for="foto" id="btnFoto">Cambiar foto</label>
+                </div>
+                <div class="formItem">
+                    <label for="Categorias">Categorias</label>
+                    <select name="select" id="Categorias">
+                        <option value="value1">Consolas</option>
+                        <option value="value2" selected>Star Wars</option>
+                        <option value="value3">Varios</option>
+                    </select>
+                </div>
+
+                <div class="formItem">
+                    <label for="nombre">Nombre del producto</label>
+                    <input type="text" name="nombre" id="nombre" autocomplete="off">
+                </div>
+                <div class="formItem">
+                    <label for="precio">Precio del producto</label>
+                    <input type="number" name="precio" id="precio" autocomplete="off">
+                </div>
+                <div class="formItem">
+                    <label for="descripcion">Descripción</label>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="2" autocomplete="off"></textarea>
+                </div>
+
+                <button>Guardar <a href="agregar-productos.html"></a></button>
+            </form>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="img/control logo.png" alt="Control logo" srcset="">
+                    <img src="img/AluraGeek logo.png" alt="AluraGeek logo" srcset="">
+                </div>
+                <div class="footer-opciones">
+                    <a href="#">¿Quienes Somos?</a>
+                    <a href="#">Politicas de privacidad</a>
+                    <a href="#">Programa de fidelidad</a>
+                    <a href="#">Nuestras tiendas</a>
+                    <a href="#">Quiero ser franquiciado</a>
+                    <a href="#">Anuncie aqui</a>
+                </div>
+                <div class="footer-form">
+                    <h3>Hable con nosotros</h3>
+                    <form action="#">
+                        <div>
+                            <label for="txtNombre">Nombre</label>
+                            <input type="text" name="txtNombre" id="txtNombre">
+                        </div>
+                        <div>
+                            <label for="txtMensaje">Escriba su mensaje</label>
+                            <textarea name="txtMensaje" id="txtMensaje" cols="30" rows="5"></textarea>
+                        </div>
+                        <button type="submit">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright&copy; 2023-2024 | Wilson Flores,   all Right Reserved</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

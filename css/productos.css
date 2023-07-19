@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap');
+
+:root{
+    --mainColor: #2A7AE4;
+    --mainColorSoft: #EAF2FD;
+    --secondaryColor: #464646;
+    --grisClaro: #F5F5F5;
+    --grisOscuro: #A2A2A2;
+    --colorFondo: #ffffff;
+}
+
+
+/*Estilos del titulo*/
+
+.productos .titulo{
+    margin-bottom: 1rem;
+}
+.productos .titulo h3{
+    font-size: 1.5rem;
+}
+
+.productos .titulo .btn{
+    background-color: var(--mainColor);
+    display: inline-block;
+    height: 3rem;
+    width: 10rem;
+    color: var(--colorFondo);
+    font-size: 1rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+/*Estilos de la preview del producto*/
+
+.producto-box{
+    width: 12.3rem;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 10px;
+    box-shadow: 2px 2px px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: .7rem;
+}
+
+.producto-box .preview{
+    position: relative;
+}
+
+.producto-box .preview img{
+    object-fit: cover;
+}
+
+.producto-box .preview .preview-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: .7rem;
+}
+
+.producto-box p{
+    font-size: 1.1rem;
+    color: var(--secondaryColor);
+}
+
+.producto-box .preview .preview-btn button{
+    background: transparent;
+    color: var(--colorFondo);
+    border: none;
+    outline: none;
+    padding-left: .7rem;
+    cursor: pointer;
+}
+
+.container-productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.3rem, 1fr));
+}
