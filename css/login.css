@@ -51,3 +51,10 @@
     color: var(--colorFondo);
     cursor: pointer;
 }
+
+@media (max-width:600px){
+    .login form input,
+    .login form button{
+        width: 18rem;
+    }
+}
